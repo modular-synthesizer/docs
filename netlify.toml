@@ -6,7 +6,7 @@
   publish = "dist"
 
 [context.deploy-preview]
-  command = "npm run build:preview"
+  command = "hugo -b $DEPLOY_PRIME_URL"
 
 [dev]
   command = "npm run start"
